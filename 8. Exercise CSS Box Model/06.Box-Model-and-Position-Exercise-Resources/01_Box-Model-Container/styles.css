@@ -1,0 +1,25 @@
+/* TODO: style the html */
+p {
+    box-sizing: border-box;
+    width: 335px;
+    color: whitesmoke;
+    background-color: #0f4069;
+    border: 2px solid white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 0.9em;
+    margin-left: 2em;
+    margin-top: 2em;
+    border-radius: 1em 3em 1em 3em;
+    position: relative;
+    top: 17px;
+}
+.background {
+    box-sizing: border-box;
+    width: 400px;
+    height: 220px;
+    background-color: #778899;    ;
+    position: absolute;
+
+}

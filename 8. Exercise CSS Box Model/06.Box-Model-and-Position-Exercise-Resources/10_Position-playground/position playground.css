@@ -1,0 +1,42 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+.viewport1{
+    position: relative;
+    background: linear-gradient(to right, #006400, #8fdf8f);
+    width: 1200px;
+    height: 600px;
+   
+}
+.viewport2{
+    position: relative;
+    background: linear-gradient(to right, #a83277, #d28113);
+    width: 1200px;
+    height: 600px;
+}
+
+.card1 img,
+.card2 img {
+    max-width: 30%;
+    max-height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card1 img {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    
+}
+.card1 i.fa-link{
+    position: absolute;
+    top: 370px;
+    left: 750px;
+}
+.card2 i.fa-star {
+    position: absolute;
+    bottom: 40px;
+    left: 750px;
+}

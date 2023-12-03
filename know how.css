@@ -1,0 +1,295 @@
+CSS provides a wide range of selectors that allow you to target and style specific elements or groups of elements in an HTML document. Here is a list of common CSS selectors:
+
+Type Selector: Selects elements of a specific type (e.g., <h1>, <p>).
+
+css
+Copy code
+h1 {
+    /* Styles for all <h1> elements */
+}
+Class Selector: Selects elements with a specific class attribute.
+
+css
+Copy code
+.my-class {
+    /* Styles for elements with class="my-class" */
+}
+ID Selector: Selects a single element with a specific ID attribute.
+
+css
+Copy code
+#my-id {
+    /* Styles for an element with id="my-id" */
+}
+Descendant Selector: Selects elements that are descendants of a specified element.
+
+css
+Copy code
+ul li {
+    /* Styles for <li> elements inside <ul> elements */
+}
+Child Selector: Selects direct children of a specified element.
+
+css
+Copy code
+div > p {
+    /* Styles for <p> elements directly inside <div> elements */
+}
+Adjacent Sibling Selector: Selects an element that is immediately preceded by a specified element.
+
+css
+Copy code
+h2 + p {
+    /* Styles for <p> immediately following <h2> */
+}
+Attribute Selector: Selects elements with a specific attribute.
+
+css
+Copy code
+input[type="text"] {
+    /* Styles for <input> elements with type="text" */
+}
+Pseudo-Classes: Selects elements in a specific state or condition.
+
+css
+Copy code
+a:hover {
+    /* Styles for links when hovered over */
+}
+Pseudo-Elements: Selects and styles a part of an element.
+
+css
+Copy code
+p::first-line {
+    /* Styles for the first line of <p> elements */
+}
+Grouping Selector: Combines multiple selectors to apply the same styles.
+
+css
+Copy code
+h1, h2, h3 {
+    /* Styles for <h1>, <h2>, and <h3> elements */
+}
+These are some of the most common CSS selectors. CSS also supports more advanced selectors like :not(), :nth-child(), and others, allowing for precise targeting of elements within your HTML document. Understanding and using these selectors effectively is essential for creating well-structured and styled web pages.
+
+class="new_class_ordinary" - 1 klas
+.new_class_ordinary
+class ="new ordinary class" - 3 otdelni klasa
+.new
+.ordindary
+.class
+
+/* how to import font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.googlefont {
+    font: 32px/1.4 'Dancing Script', cursive;
+    color: blueviolet;
+}
+<p class="googlefont">This is paragraph with class!</p>
+
+In CSS, "background" and "background-color" are related properties used for styling elements' backgrounds, but they serve different purposes and have different capabilities:
+
+background-color:
+
+background-color is a CSS property used to set the background color of an element.
+It only affects the background color and does not control other background-related properties such as images or gradients.
+It is typically used to set a solid color as the background for an element.
+Example: background-color: #FF0000; sets the background color to red.
+background:
+
+background is a more comprehensive CSS property that allows you to set multiple background-related properties, including color, images, gradients, repeat options, and positioning.
+You can use it to set background images, gradients, and colors, and control their size, repeat behavior, and position.
+It provides a way to create more complex background effects, like gradients or image backgrounds.
+Example: background: #FF0000 url('background.jpg') repeat-x center center; sets the background color to red and uses the "background.jpg" image, repeating it only on the x-axis and centering it horizontally and vertically.
+In summary, while "background-color" is primarily for setting a simple background color, the "background" property is more versatile and allows you to set various background properties, including colors and images, and control their appearance in more detail. It's a powerful tool for creating visually appealing and complex backgrounds for your web elements.
+
+Inline-block and block elements are two common display types in CSS, and they have distinct differences in terms of how they behave in the layout of a web page. Here are the key differences:
+
+Box Model:
+
+Block Elements: Block-level elements create a "block-level formatting context." They occupy the full width of their parent container and stack vertically on top of each other. You can control their dimensions using properties like width and height.
+Inline-Block Elements: Inline-block elements, on the other hand, behave like inline elements when it comes to how they flow within text content (horizontally), but they can have dimensions (width and height) and be styled as block-level elements. They are similar to inline elements but can have block-level properties.
+Line Breaks:
+
+Block Elements: Block-level elements create line breaks before and after themselves, pushing adjacent elements onto new lines.
+Inline-Block Elements: Inline-block elements do not force line breaks before or after themselves. They flow within the content like inline elements.
+Width and Height:
+
+Block Elements: Block-level elements, such as <div>, take up the full width of their parent container by default. You can specify their width and height.
+Inline-Block Elements: Inline-block elements only take up as much width as necessary, like inline elements. However, you can set their width and height if needed.
+Margins and Padding:
+
+Block Elements: Block elements can have margins and padding on all four sides, and they will affect the layout of adjacent elements.
+Inline-Block Elements: Inline-block elements can have margins and padding, but they only affect the space around the element itself and do not impact adjacent elements.
+Text Flow:
+
+Block Elements: Block elements create a new block formatting context, and they do not allow other elements to appear to their left or right within the same line.
+Inline-Block Elements: Inline-block elements flow within the text content, allowing other elements to appear to their left or right on the same line.
+Here's an example to illustrate the difference:
+
+html
+Copy code
+<div class="block">Block Element</div>
+<div class="inline-block">Inline-Block Element</div>
+css
+Copy code
+.block {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  padding: 10px;
+}
+In this example, the "Block Element" will create a new block-level box with margins and padding, while the "Inline-Block Element" will behave like an inline element but have dimensions and space around itself.
+inline-block and block are two different display properties in CSS that dictate how elements are rendered on a webpage.
+
+Block Elements:
+
+Default Behavior: Block-level elements, by default, take up the full width of their parent container and start on a new line. Examples of block-level elements include <div>, <p>, <h1>, <ul>, <li>, etc.
+
+Properties:
+
+width and height can be applied.
+Margins, paddings, and borders can be applied on all four sides.
+They create a new "block" or "box" in the layout.
+Example:
+
+css
+Copy code
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+Inline-Block Elements:
+
+Default Behavior: Inline-block elements are similar to inline elements in that they flow within the content and do not start on a new line. However, they can have heights and widths applied to them.
+
+Properties:
+
+width and height can be applied.
+Margins and paddings can be applied on all sides, but top and bottom margins may not collapse with adjacent elements.
+Inline-block elements form a "box" within the flow of content.
+Example:
+
+css
+Copy code
+span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+Note: To make an element an inline-block, you have to explicitly set its display property to inline-block.
+
+Key Differences:
+
+Width and Height:
+
+Block elements can have both width and height specified.
+Inline-block elements can also have width and height specified.
+New Line vs Inline:
+
+Block elements start on a new line and take up the full width available.
+Inline-block elements do not start on a new line, but they can have heights and widths applied.
+Margins and Paddings:
+
+Margins, paddings, and borders can be applied to all sides for both block and inline-block elements.
+However, for inline-block elements, the top and bottom margins may not collapse with adjacent elements.
+Interaction with Other Elements:
+
+Block elements create a new "block" in the layout, taking up the full width available and pushing subsequent elements onto a new line.
+Inline-block elements flow within the content like inline elements but can have dimensions and other block-like properties.
+In summary, block and inline-block elements behave differently in terms of flow and how they interact with other elements in the layout. block elements start on a new line and take up the full width, while inline-block elements flow within the content and can have specified dimensions.
+In CSS, there are various display values for elements, including "block" and "inline-block." These values determine how elements are displayed and how they interact with other elements on a web page. Here's a brief explanation of the key differences between "block" and "inline-block" elements:
+
+Block Elements:
+
+Vertical Stacking: Block elements create a new block formatting context and stack vertically on top of each other. Each block element starts on a new line, pushing subsequent elements down.
+
+Full Width: Block elements, by default, take up the full available width of their parent container. You can control their width by specifying a fixed width or using CSS properties like width.
+
+Common Block Elements: Common block-level elements include <div>, <p>, <h1>, <ul>, <li>, and others.
+
+Margin and Padding: Block elements accept both horizontal and vertical margins and paddings, allowing for spacing around and between elements.
+
+Box Model: Block elements follow the CSS box model, including properties like width, height, margin, padding, and border.
+
+Inline-Block Elements:
+
+Horizontal Flow: Inline-block elements are displayed within the flow of text, just like inline elements, but they can have block-level properties.
+
+Partial Width: Inline-block elements only take up as much horizontal space as necessary for their content. You can control their width, but they won't naturally expand to the full width of their container.
+
+Common Inline-Block Elements: Inline-block elements can be created from any inline element (e.g., <span>) by applying the display: inline-block CSS property.
+
+Margin and Padding: Inline-block elements accept horizontal margins and paddings. They do not affect the vertical layout of surrounding elements.
+
+Box Model: Inline-block elements follow the CSS box model, but they do not affect the vertical layout of elements like block elements do.
+
+Use Cases:
+
+Block elements are typically used for structural elements that need to stack vertically, such as headers, paragraphs, lists, and dividers.
+Inline-block elements are useful for creating structures where you want elements to flow horizontally while allowing for block-level styling. For example, creating navigation menus with horizontal list items.
+It's essential to choose the display value (block, inline, inline-block, etc.) that suits your layout and design requirements. Elements can be changed from one display type to another using CSS properties like display, which provides flexibility in designing your web page layout.
+
+
+БЛОКОВИ ЕЛЕМЕНТИ СЕ ПОЛЗВАТ ДА СЕ ПОСТАВЯТ ВЕРТИКАЛНО ЕДИН ПОД ДРУГ.
+ИНЛАЙН-БЛОК ЕЛЕМЕНТИ СЕ ПОЛЗВАТ ДА СЕ ПОСТАВЯТ ХОРИЗОНТАЛНО В РАМКИТЕ НА БЛОКА!
+
+padding: 0 0 0 0; top right bottom left
+margin: 0 0 0 0; t r b l
+margin: 0 0 0 1em; samo left
+margin 1em 5em; 1em-otgore i otdolu, 5em - ljavo i djasno
+margin-block: 1em; ednovremmenno otgore i otdolu
+margin-block-start: 1em; otgore
+margin-block-start: 1em; otdolu
+maring-inline: 1em; otljavo i otdjasno
+
+* {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box; /*казва на браузера да смалява съдържанието на бокса + падинга и марджините за да влиза в широчината на контейнера без значение какви стойности даваме на падинг или марджин*/
+/*падинг и бордер са част от калкулацията на размерите на бокса в рамките на контейнера*/
+}
+
+display: inline-block; - третира се като текст или част от текста, хем е част от текста, хем е блоков елемент, ползва се много рядко
+display: block; - това е контейнер, падинг и марджин работят по хоризонтал и по верикал 
+
+1em = 16px;
+
+Position: static, relative, absolute, fixed, sticky
+
+absolute - може да позиционирам елемента спрямо друг елемент, ако съм му сложил position: relative, или спрямо body, ако няма по-горен елемент спрямо, който да позиционирам елемента
+
+z-index: [number]; нареждане на елементите по z-координата
+
+Z-UNDEX: -1
+BROWSER :window-inactive
+Z-INDEX: 1
+Z-INDEX: 2
+
+vh - visual height 
+80vh - 80 % от visual height

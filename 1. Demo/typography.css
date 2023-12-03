@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+.googlefont {
+    font: 32px/1.4 'Dancing Script', cursive;
+    color: blueviolet;
+}
+
+img {
+    display: block;
+    max-width: 30%;
+    border: 2px solid #eff169;
+    padding: 0.5em;
+}
+
+img [class^="align"] {
+    margin-bottom: 0.5em;
+}
+
+img.align-left {
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+img.align-right {
+    float: right;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+table {
+    table-layout: fixed; /*kolonite sa absolutno ednakvi*/
+    width: 100%;
+    /*border-spacing: 10px; pravi razstojanie ot 10 px mejdu otdelnite kletki*/
+    border-collapse: collapse; /*1px navsjakude*/
+    color: rgb(235, 193, 9);
+}
+
+table, th, td {
+    border: 1px solid #CCC;
+}
+
+th, td {
+    padding: 0.5em 0.7em;
+}
+
+table thead th {
+    background: rgb(88, 141, 8);
+}
+
+table tbody tr:nth-child(even) td {
+    background: rgb(115, 116, 116);
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ul ul {
+    list-style-type: disc;
+}
+
+ul ul ul {
+    list-style-type: circle;
+}
+
+ul {
+    background-color: bisque;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.something {  /* This is the parent container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 5em;
+    height: 5em;
+    background: rgb(225, 235, 95);
+}
+#nothing {
+    width: 5em;
+    height: 5em;
+    background: greenyellow;
+}
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.centered {
+    text-align: center; /* Center the content horizontally within the div */
+    width: 3em;
+    height: 3em;
+    background: rgb(123, 123, 223);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 5em;
+    height: 5em;
+    background: orange;
+    margin-right: 200px;
+
+}
+
+.another {
+    width: 5em;
+    height: 5em;
+    background: rgb(221, 103, 231);
+    margin-left: 10px;
+}
+
+.center_text {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}

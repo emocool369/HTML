@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box; /*казва на браузера да смалява съдържанието на бокса + падинга и марджините за да влиза в широчината на контейнера без значение какви стойности даваме на падинг или марджин*/
+/*падинг и бордер са част от калкулацията на размерите на бокса в рамките на контейнера*/
+}
+aside {
+    box-sizing: content-box;
+}
+body {
+    background: #eee;
+}
+.container {
+    background: #666;
+    max-width: 30em;
+    overflow: hidden;
+}
+.container2 {
+    background: #666;
+    max-width: 30em;
+    overflow: hidden;
+}
+.box {
+    display: inline-block; /*inline blok ni dava vuzmojnost da polzvame margin ne samo po horizontala, no i po vertikala*/
+    /*display: inline; paddinga po vertikala ne raboti i elementite se subirat*/
+    width: 33.3%;
+    padding: 1em;
+    background: red;
+    margin: 0.5em 0;
+}
+
+.box2 {
+    display: inline; 
+    width: 33.3%;
+    padding: 1em;
+    background: red;
+    margin: 0.5em 0;
+}
+
+.container3 {
+    background: #666;
+    max-width: 30em;
+  
+}
+
+.box3 {
+    display: inline-block; /*inline blok ni dava vuzmojnost da polzvame margin ne samo po horizontala, no i po vertikala*/
+    /*display: inline; paddinga po vertikala ne raboti i elementite se subirat*/
+    width: 23.3%;
+    padding: 1em;
+    background: red;
+    margin: 0.5em;
+}
+.box3:nth-child(2) {
+    background: green;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    /*bottom: 20px;
+    left: 140px; - otiwa nagore*/
+}
+
+.container4 {
+    background: #666;
+    max-width: 30em;
+  
+}
+
+.box4 {
+    display: inline-block; /*inline blok ni dava vuzmojnost da polzvame margin ne samo po horizontala, no i po vertikala*/
+    /*display: inline; paddinga po vertikala ne raboti i elementite se subirat*/
+    width: 23.3%;
+    padding: 1em;
+    background: red;
+    margin: 0.5em;
+}
+.box4:nth-child(2) {
+    background: green;
+    position: relative;
+    bottom: 20px;
+    left: -10px;
+}
+
+.container5 {
+    background: #666;
+    max-width: 30em;
+  position: relative;
+  padding: 1em;
+}
+
+.box5 {
+    display: inline-block; /*inline blok ni dava vuzmojnost da polzvame margin ne samo po horizontala, no i po vertikala*/
+    /*display: inline; paddinga po vertikala ne raboti i elementite se subirat*/
+    width: 23.3%;
+    padding: 1em;
+    background: red;
+    margin: 0.5em;
+}
+.box5:nth-child(2) {
+    background: green;
+    position: absolute;
+    opacity: 0.5;
+ bottom: 0;
+ left: 0;
+}
+
+.container6 {
+    background: #666;
+    width: 50%;
+    position: fixed;
+    padding: 1em;
+    right: 0;
+    bottom: 0;
+}
+
+.box6 {
+    display: inline-block; /*inline blok ni dava vuzmojnost da polzvame margin ne samo po horizontala, no i po vertikala*/
+    /*display: inline; paddinga po vertikala ne raboti i elementite se subirat*/
+    width: 23.3%;
+    padding: 1em;
+    background: red;
+   /* margin: 0.5em;*/
+}
+.box6:nth-child(2) {
+    background: green;
+    position: absolute;
+    opacity: 0.5;
+    bottom: 0;
+    left: 0;
+}

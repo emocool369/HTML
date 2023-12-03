@@ -1,0 +1,41 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+ul li{
+    display: inline-block;
+    background-color: rgb(168, 167, 167);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0.5em;  
+}
+ul a {
+    display: block;
+    position: relative;
+    top: 13px;
+    left: 13px;    
+}
+.fa-brands {
+    color: #050505;
+}
+/* Change the color on hover for each specific icon */
+.fa-square-facebook:hover {
+    color: #436abe;
+}
+
+.fa-twitter:hover {
+    color: #00a8ed; /* Change the color for the Twitter icon */
+}
+
+.fa-brands.fa-google-plus:hover {
+    color: #dd4722; /* Change the color for the Google Plus icon */
+}
+.fa-brands.fa-linkedin:hover {
+    color: #347fee; /* Change the color for the Google Plus icon */
+}
+
+.fa-brands.fa-instagram:hover {
+    color: pink; /* Change the color for the Instagram icon */
+}
+.fa-flag:hover {
+    color: red;
+}

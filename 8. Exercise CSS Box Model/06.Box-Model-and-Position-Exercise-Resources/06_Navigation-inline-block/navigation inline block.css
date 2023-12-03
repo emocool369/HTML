@@ -1,0 +1,51 @@
+html {
+    font-family: Helvetica, sans-serif;
+
+}
+body {
+    margin-left: 2em;
+}
+
+header {
+    display: block;
+    border-bottom: 2px solid black;
+    height: 5.5em;
+    padding-left: 0;
+    margin-left: 0;
+}
+.site-title {
+   font-weight: bold;
+   font-size: 2em;
+   width: 8em;
+   padding-top: 1em;
+
+
+}
+
+nav {
+    display: block;
+    position: relative;
+    left: 15em;
+    top: -2.5em;
+    margin-left: 2em;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+    
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 2em;
+  
+}

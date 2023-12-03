@@ -1,0 +1,122 @@
+https://flukeout.github.io/
+1. Type Selector / Select elements by their type (div, p, ul, article)
+div {
+
+}
+div selects all <div> elements.
+p selects all <p> elements.
+2. Type Selector / Select elements by their type
+p
+div selects all <div> elements.
+p selects all <p> elements.
+3. ID Selector / Select elements with an ID
+#idname
+#cool selects any element with id="cool"
+ul#long selects ul <id="long">
+4. Descendant Selector / naslednik / Select an element inside another element
+article p
+p  strong selects all strong elements that are inside of any <p>
+#fancy  span selects any span elements that are inside of the element with id="fancy"
+5. Combine the Descendant & ID Selectors
+#idname p
+#cool span selects all span elements that are inside of elements with id="cool"
+6. Class Selector / Select elements by their class
+.classname
+.neato selects all elements with class="neato"
+7. Combine the Class Selector
+article.classname
+#big.wide selects all elements with id="big" that also have class="wide"
+8. Excercise
+article p.classname
+9. Comma Combinator / Combine, selectors, with... commas!
+div, article
+a, p, div selects all a, p and div elements
+10. The Universal Selector / You can select everything!
+*
+p * selects any element inside all <p> elements.
+11. Combine the Universal Selector
+div *
+ul.fancy * selects every element inside all <ul class="fancy"> elements.
+12. Adjacent Sibling Selector / Select an element that directly follows another element
+article + p
+p + .intro selects every element with class="intro" that directly follows a <p>
+div + a selects every <a> element that directly follows a <div>
+13. General Sibling Selector / Select elements that follows another element
+article ~ p
+A ~ B selects all B that follow a A
+14. Child Selector / Select direct children of an element
+article > p
+A > B selects all B that are a direct children A
+15. First Child Pseudo-selector / Select a first child element inside of another element
+article p:first-child
+:first-child selects all first child elements.
+p:first-child selects all first child <p> elements.
+div p:first-child selects all first child <p> elements that are in a <div>.
+16. Only Child Pseudo-selector / Select an element that are the only element inside of another one.
+article :only-child
+span:only-child selects the <span> elements that are the only child of some other element.
+ul li:only-child selects the only <li> element that are in a <ul>.
+17. Last Child Pseudo-selector / Select the last element inside of another element
+p:last-child, a:last-child
+:last-child selects all last-child elements.
+span:last-child selects all last-child span elements.
+ul li:last-child selects the last <li> elements inside of any <ul>.
+18. Nth Child Pseudo-selector / Select an element by its order in another element
+:nth-child(3)
+:nth-child(8) selects every element that is the 8th child of another element.
+div p:nth-child(2) selects the second p in every div
+19. Nth Last Child Selector / Select an element by its order in another element, counting from the back
+article:first-of-type - broi otpred nazad
+article:nth-last-child(3) - broi otzad napred
+:nth-last-child(2) selects all second-to-last child elements.
+20. First of Type Selector / Select the first element of a specific type
+article:first-of-type
+span:first-of-type selects the first span in any element.
+21. Nth of Type Selector / Selects a specific element based on its type and order in another element - or even or odd instances of that element.
+p:nth-of-type(even)
+div:nth-of-type(2) selects the second instance of a div.
+.example:nth-of-type(odd) selects all odd instances of a the example class.
+22. Nth-of-type Selector with Formula / The nth-of-type formula selects every nth element, starting the count at a specific instance of that element.
+article:nth-child(2n+3) - vseki vtori article kato zapochnem ot tretia article
+span:nth-of-type(6n+2) selects every 6th instance of a <span>, starting from (and including) the second instance.
+23. Only of Type Selector / Select elements that are the only ones of their type within of their parent element
+article a:only-of-type
+p span:only-of-type selects a <span> within any <p> if it is the only <span> in there.
+24. Last of Type Selector / Select the last element of a specific type
+p:last-of-type, a:last-of-type
+:not(span):last-of-type
+div:last-of-type selects the last <div> in every element.
+p span:last-of-type selects the last <span> in every <p>.
+25. Empty Selector / Select elements that don't have children
+article:empty
+div:empty selects all empty <div> elements.
+26. Negation Pseudo-class / Select all elements that don't match the negation selector
+article:not(.classname)
+:not(#fancy) selects all elements that do not have id="fancy".
+div:not(:first-child) selects every <div> that is not a first child.
+:not(.big, .medium) selects all elements that do not have class="big" or class="medium".
+27. Attribute Selector / Select all elements that have a specific attribute
+<article for="Test">
+<p for="Test2">
+<a for="Test3">
+[for] - selektira vsichki elementi, koito for atribut
+a[href] selects all <a> elements that have a href="anything" attribute.
+[type] selects all elements that have a type="anything". attribute
+28. Attribute Selector / Select all elements that have a specific attribute
+article[for]
+[value] selects all elements that have a value="anything" attribute.
+a[href] selects all a elements that have <a> href="anything" attribute.
+input[disabled] selects all <input> elements with the disabled attribute
+29. Attribute Value Selector / Select all elements that have a specific attribute value
+[for="Test2"]
+input[type="checkbox"] selects all checkbox input elements.
+30. Attribute Starts With Selector / Select all elements with an attribute value that starts with specific characters
+[for^="Tes"] - vsichki elementi, koito imat "for" atribut i toi zapochv a s "Tes"
+.toy[category^="Swim"] selects elements with class toy and either category="Swimwear or category="Swimming".
+31. Attribute Ends With Selector / Select all elements with an attribute value that ends with specific characters
+[for$="est"] - vsichki elementi, koito imat "for" atribut i toi zavurchva s "est"
+img[src$=".jpg"] selects all images display a .jpg image.
+32. Attribute Wildcard Selector / Select all elements with an attribute value that contains specific characters anywhere
+[for*="es"] - vsichki elementi, koito imat "for" atribut i toi sudurja "es"
+img[src*="/thumbnails/"] selects all image elements that show images from the "thumbnails" folder.
+[class*="heading"] selects all elements with "heading" in their class, like class="main-heading" and class="sub-heading"

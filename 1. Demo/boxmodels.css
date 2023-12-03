@@ -1,0 +1,127 @@
+.box_container {
+    background: #eee;
+}
+
+[class*="test"] {
+    background: #666;
+    color: white;
+}
+
+[class*="span"] {
+    background: green;
+    color: white;
+}
+
+.span_box_4 {
+    padding: 0.7em; /*по-хоризонтал*/
+    margin: 2em; /*по-хоризонтал, от външната страна*/
+    display: inline-block; /*марджина и падинга започват да работят от всички страни хоризонтал и вертикал, иначе само по хоризонтал*/
+}
+.test1_5 {
+    padding: 0.5em;
+    margin: 2em;
+    display: inline-block;
+}
+
+.test2 {
+    padding: 0.5em;
+    margin: 2em;
+    
+}
+
+.test3 {
+    padding: 0.5em;
+    margin: 2em;
+    display: inline-block; /*слага се хоризонтално в рамките на блока*/
+}
+
+.link {
+    display:block; /*прави елемента блоков и може да се поставят много блокове един под друг вертикално, докато инлайн е хоризонтално*/
+    background: grey;
+    padding: 1em; /*слага отвяскъде около текста падинг 1ем*/
+}
+
+.link:hover {
+    background: red;
+}
+
+.link2 {
+   
+    background: grey;
+    padding: 1em; /*слага отвяскъде около текста падинг 1ем*/
+}
+
+.link2:hover {
+    background: red;
+}
+
+.box {
+    background: red;
+    width: 70px;
+    height: 70px;
+    color: black;
+    overflow: scroll;
+    /*overflow: hidden;
+    overflow: visible;*/
+    border: 1px solid black;
+    margin: auto;
+
+}
+.margin {
+    position: relative;
+    background: orange;
+    padding: 1.5em;
+}
+
+.border {
+    position: relative;
+    padding: 0.7em;
+    background: black;
+}
+.padding {
+    position: relative; /*може да мести елемента от неговото стандартно място, отстояние от най-левия ъгъл надолу, с топ, ботъм, райт, лефт, може да преместим елемента от статичната му позиция по координатната система*/
+    padding: 1em;
+    background: greenyellow;
+}
+.box_example {
+    border: 1px solid #333;
+    background: rgb(99, 99, 240);
+    line-height: 1; /*намалява височината на линията*/
+    padding: 1em;
+    margin: 1em;
+    color: rgb(245, 242, 242);
+}
+
+.description {
+    position: absolute; /*позициониране на един елемент спрямо друг елемент, изкарва елемента от неговата статична позиция и позиционира елемента спрямо неговия родител, който не е със статична позиция, на най-левия ъгъл*/
+    top: 2px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.description2 {
+    font-size: x-small;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.description3 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.example1 {
+    width: 250px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}

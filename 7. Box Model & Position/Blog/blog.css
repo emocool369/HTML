@@ -1,0 +1,80 @@
+/* Reser */
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+/* Typography */
+html {
+    font: 14px/1.5 'Segoe UL', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, table, input, textarea{
+    font: inherit;
+}
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+/* Layout */
+.container {
+   max-width: 45em; 
+   margin: 2em auto;
+   background: #eee;
+   border-radius: 0.5em;
+   padding: 2em;
+}
+.site-header {
+    border-bottom: 2px solid black;
+    position: relative;
+}
+/*
+.site-title,
+.main-nav {
+    display: inline-block;
+}
+*/
+.site-title a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+.site-footer {
+    padding: 0.5em;
+    border-top: 2px solid black;
+}
+.site-footer p:last-child {
+padding: 0;
+}
+/* Navigation */
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    padding: 0.5em 1em;
+    margin: 0 0.2em;
+    background: white;
+    border-radius: 0.3em;
+}
+.main-nav li {
+    display: inline-block;
+}
+.main-nav {
+    /*margin-left: 5em;*/
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+}
+.main-nav a:hover {
+    background: #060;
+    color: #fff;
+}
+.main-nav ul{
+    padding: 0;
+}

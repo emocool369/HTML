@@ -1,0 +1,46 @@
+.site {
+    width: 66ch;
+    margin: 0 auto;
+}
+
+/* Selector types */
+
+/* 1. Element / Type selector - имена на тагове, които използваме в HTML */
+
+body {
+background: #7482e0;
+color: rgb(187, 203, 248);
+}
+
+h1 {
+    background: #a9f3d7;
+}
+/* всичко това са елемент тайп селектор
+ul, div, header, article, main {
+
+}*/
+
+/* 2. Class Selector, когато имаме точка и думичка с която си 
+дефинираме набор от правила */
+
+.warning {
+    background: yellow;
+}
+
+/* 3. ID Selector, за уникални елементи, селектиране на точно
+определен елемент */
+
+#the-one-and-only {
+background: rgb(252, 176, 176);
+}
+
+/* 4. Attribute */
+
+[href] {
+    color: rgb(130, 11, 141);
+}
+
+[id] {
+    color: rgb(127, 129, 236);
+}
+

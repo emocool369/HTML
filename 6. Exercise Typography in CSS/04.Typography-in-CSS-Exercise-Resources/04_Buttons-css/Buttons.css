@@ -1,0 +1,71 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+/*
+.button:active {
+    background: orange;
+    color: white;
+*/
+/* Add this CSS to your stylesheet (styles.css) */
+
+body {
+    background: rgb(223, 223, 223);
+    margin-left: 40px;
+    border: 1px solid black;
+    width: 500px;
+   
+}
+
+div {
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+div:last-of-type {
+    margin-bottom: 70px;
+}
+
+h2:first-of-type {
+margin-top: 60px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust this value to control the space between buttons */
+}
+
+.pill-button {
+    padding: 5px 15px;
+    border: 1.5px solid black;
+    border-radius: 30px; /* Adjust this value to control the pill shape */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px; /* Set the desired font size */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-row .pill-button.hover:hover,
+.button-row.fill .pill-button.hover:hover {
+    background: rgb(0, 102, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.button-row.fill .pill-button{
+    background: black;
+    color: white;
+}
+
+.button-row.fill .pill-button.download {
+    padding: 5px 20px;
+}

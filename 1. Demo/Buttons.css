@@ -1,0 +1,92 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+/*
+.button:active {
+    background: orange;
+    color: white;
+*/
+/* Add this CSS to your stylesheet (styles.css) */
+
+.button {
+    display: inline-block;
+    background: #CCC;
+    color: rgb(5, 14, 141);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: all 0.3s ease-in;
+    margin-right: 20px;
+}
+
+.button:hover {
+    background: #369;
+    color:#fff;
+}
+
+.button:active {
+    background: orange;
+    color: white;
+}
+
+.button.type-pill {
+    border-radius: 5em;
+}
+
+.buttons {
+    background-color: antiquewhite;
+    margin: 10px 160px 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 400px;
+   
+}
+
+.buttons h2 {
+    margin-left: 20px;
+}
+
+
+
+.button-row {
+    margin-left: 20px;
+}
+/*
+.buttons .download i { - izbira poslednite butoni
+    margin-bottom: 20px;
+}
+*/
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust this value to control the space between buttons */
+}
+
+.pill-button {
+    padding: 5px 15px;
+    border: 1.5px solid black;
+    border-radius: 30px; /* Adjust this value to control the pill shape */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px; /* Set the desired font size */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-row .pill-button.hover:hover,
+.button-row.fill .pill-button.hover:hover {
+    background: rgb(0, 102, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.button-row.fill .pill-button{
+    background: black;
+    color: white;
+}
+
+.button-row.fill .pill-button.download {
+    padding: 5px 20px;
+}
+

@@ -1,0 +1,48 @@
+
+body {
+    background: rgb(113, 236, 119);
+    color: rgb(127, 80, 255);
+}
+
+p{
+    color: black;
+}
+
+ul li {
+    color: brown;
+}
+
+a {
+ color: white;   
+}
+
+a[href^="https://"]{
+    color: rgb(88, 90, 236);
+}
+.box {
+    background: white;
+}
+
+.warning {
+    color: red;
+}
+
+h1.amazing {
+    font-size: 20px;
+    color: darkblue;
+}
+
+.amazing {
+    color: chocolate !important;
+}
+
+.fancy {
+
+    border: 2px solid purple;
+    
+}
+
+#header_my-html-document-title {
+   /* font-size: 120px;*/
+}
+

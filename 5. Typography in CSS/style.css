@@ -1,0 +1,45 @@
+/*'@font-face' construct.*/
+@font-face {
+    font-family: "Trickster";
+    src:
+    local("Trickster"),
+    url("trickster-COLRv1.otf") format("opentype") tech(color-COLRv1),
+    url("trickster-outline.otf") format("opentype"),
+    url("trickster-outline.woff") format("woff");
+    }
+
+    /*CSS Units - EM & REM */
+
+    /*An explanation of EMs
+▪ Ems are so-called because they are thought to approximate the
+size of an uppercase letter M, although 1em is significantly larger
+than this.
+Bringhurst describes the EM thus:
+▪ The em is a sliding measure. One em is a distance equal to the
+type size.
+▪ In 6-point type, an em is 6 points; in 12 point type an em is 12
+points and in 60 point type an em is 60 points.
+Thus, a one em space is proportionately same in any size.*/
+
+/*CSS Properties*/
+div { /*color & background*/
+    color: #000;
+    background: #fff;
+    }
+
+div { /*text*/
+    text-align: let;
+    text-decoration: underline;
+    text-indent: 5em;
+    text-overflow: ellipsis;
+    text-shadow: 0 0 5px #000;
+    }
+
+div {/*font*/
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+    }   
+

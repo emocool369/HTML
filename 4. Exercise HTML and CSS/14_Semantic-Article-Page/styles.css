@@ -1,0 +1,22 @@
+article {
+    padding: 5px 15px;
+    background-color: #e4e978;
+    width: 700px;
+ }
+
+ article header {
+    padding: 5px 15px;
+    background-color: #f2f4c0;
+    border: 1px solid #b2ad7d;
+    margin: 15px 10px;
+ }
+
+ article section article {
+    padding: 5px 15px;
+    background-color: #f2f4c0;
+    border: 1px solid #b2ad7d;
+    font-style: italic;
+    color: #4c7658;
+    margin: 15px 10px;
+    width: 650px;
+ }

@@ -1,0 +1,80 @@
+@media print { ... }
+@media screen, print { ... }
+
+
+@import url('styles.css') screen;
+
+@media screen and (min-width: 600px) {
+    …
+    }
+@media screen and (max-width: 600px) {
+    …
+    }
+@media screen and (orientation: landscape) {
+    …
+    }
+@media screen and (hover: hover) {
+    …
+    }
+@media screen and (pointer: fine) {
+    …
+    }
+@media screen and (pointer: fine) {
+    …
+    }
+@media screen not (pointer: fine) {
+    …
+    }
+@media only screen and (pointer: fine) {
+    …
+    }
+@media (min-height: 680px), only screen and (orientation: portrait) {
+    …
+    }
+
+
+@media screen {
+        body {
+            background: lightgreen;
+        }
+    }
+@media screen and (min-width: 500px) {
+        body {
+            background: lightgreen;
+        }
+    }
+@media screen and (max-width: 500px) {
+        body {
+            background: lightgreen;
+        }
+    }
+@media (max-width: 500px) {
+        body {
+            background: lightgreen;
+        }
+    }
+@media (orientation: landscape) {
+        body {
+            background: lightgreen;
+        }
+    }
+@media (aspect-ratio: 1/1) { /* square orientation */
+        body {
+            background: lightgreen;
+        }
+    }
+@media (width: 1024px) and (height: 1024px) {
+        body {
+            background: lightgreen;
+        }
+    }
+@media (width: 1024px) and 
+        (height: 1024px) and
+        (width: 1024px) and 
+        (height: 1024px) and
+        (orientation: 1/1)
+        {
+        body {
+            background: lightgreen;
+        }
+    }
